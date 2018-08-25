@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Chester Tourist - A place to be</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+    <!-- Your CSS styles are here -->
+    <link rel="stylesheet" href="css/imagehover.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/simple-grid.css">
+</head>
+    <body>
+         <div class="container-fluid" >
+            <div class="row banner">
+               <div class="banner-image-activities">
+                <div class="col-12">
+                    <div class="topnav" id="myTopnav">
+                      <a href="index.html">Home</a>
+                        <a href="#news">Book</a>
+                        <a href="#contact">Discover</a>
+                        <a href="#contact">Facts</a>
+                        <a href="#contact">Contact Us</a>
+                        <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>
+                        <img src="images/CTlogo.png" style="height:100px; float:right;">
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+             <!-- BANNER -->
+          <div class="container">
+             <div class="row welcome">
+                <h1 class="center header-title">Chester has some amazing activities which you can enjoy!</h1>
+                <p class="center paragraph-text">Chester (Welsh: Caer [ˈkai̯r]) is a walled city in Cheshire, England, on the River Dee, close to the border with Wales. With a population of 118,200 in 2011,[3] it is the most populous settlement of Cheshire West and Chester, which had a population of 332,200 in 2014.[4] Chester was granted city status in 1541.</p>
+          </div>
+
+
+              <!-- IMAGE ROW  -->
+     <div class="row">
+          <div class="col-4 col-12-sm" id="fishing-image">
+          <a href="#"><div class="placeholder nightlife"><h4 class="tags" id="nightlife">Chester Nightlife</h4></div></a>
+     </div>
+          <div class="col-4 col-12-sm" id="nightlife-image">
+          <a href="#"> <div class="placeholder skydiving"><h4 class="tags" id="fishing">Sky Diving</h4></div></a>
+     </div>
+          <div class="col-4 col-12-sm" id="painting-image">
+            <a href="#"> <div class="placeholder bungee"><h4 class="tags" id="painting">Bungee Jumping</h4></div></a>
+         </div>
+     </div>
+
+     <div class="row">
+        <div class="col-4 col-12-sm">
+            <a href="#"> <div class="placeholder cafes" id="imagasdasde"><h4 class="tags" id="buildings">Cafes</h4></div></a>
+        </div>
+        <div class="col-4 col-12-sm">
+           <a href="#">  <div class="placeholder shopping"><h4 class="tags" id="activity">Shopping</h4></div></a>
+        </div>
+        <div class="col-4 col-12-sm">
+           <a href="#">  <div class="placeholder foodandwine"><h4 class="tags" id="people">Food & Wine</h4></div></a>
+         </div>
+     </div>
+    <!-- CLOSING CONTAINER -->
+ </div>
+    <!-- CLOSING CONTAINER -->
+    <div class="container-fluid">
+    <div class="row">
+            <div class="cloud-form">
+                <div class="form">
+                    <div class="form-style-6">
+                        <h1>Find and book</h1>
+                        <form>
+                        <input type="text" name="field1" placeholder="Search: Hotels, Flights" required/>
+                        <input type="text" name="field2" placeholder="From:" required/>
+                        <input type="text" name="field2" placeholder="To: Chester" required/>
+                        <input type="date" name="field2" placeholder="Depart date" required />
+                        <input type="date" name="field2" placeholder="Return date" required />
+                         <input type="submit" value="Find" style="font-size:18px;" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+           <div class="row row-article">
+             <div class="col-6 col-12-sm article-image" id="fishing-image">
+                <div class="placeholder architecture"><h4 class="tags" id="nightlife">Architecture</h4></div>
+            </div>
+            <div class="col-6 col-12-sm">
+              <h1 class="padding-header">Architecture</h1>
+              <p class="article-paragraph-first">Chester is one of the best preserved walled cities in Britain. It has a number of medieval buildings, but some of the black-and-white buildings within the city centre are Victorian restorations.</p>
+              <button class="button-article hvr-icon-back my_popup_open"><i class="fa fa-chevron-circle-left hvr-icon"></i>Read more</button>
+            </div>
+          </div>
+    </div>
+
+       <div class="container" style="padding-bottom:60px;">
+           <div class="row row-article">
+                 <div class="col-6 col-12-sm">
+              <h1 class="padding-header-second">Buildings</h1>
+              <p class="article-paragraph">Apart from a 100-metre (330 ft) section, the listed Grade I walls are almost complete.[6] The Industrial Revolution brought railways, canals, and new roads to the city.</p>
+              <button class="button-article-second hvr-icon-forward my_popup_open">Read more<i class="fa fa-chevron-circle-right hvr-icon"></i></button>
+            </div>
+             <div class="col-6 col-12-sm article-image" id="fishing-image">
+                <div class="placeholder architecture-2"><h4 class="tags" id="nightlife">Buildings</h4></div>
+            </div>
+          </div>
+    </div>
+      <!-- Add content to the popup -->
+  <div id="my_popup">
+<p id="popup-text">Chester (Welsh: Caer [ˈkai̯r]) is a walled city in Cheshire, England, on the River Dee, close to the border with Wales. With a population of 118,200 in 2011,[3] it is the most populous settlement of Cheshire West and Chester, which had a population of 332,200 in 2014.[4] Chester was granted city status in 1541.
+
+Chester was founded as a "castrum" or Roman fort with the name Deva Victrix in the reign of the Emperor Vespasian in 79 AD. One of the main army camps in Roman Britain, Deva later became a major civilian settlement. In 689, King Æthelred of Mercia founded the Minster Church of West Mercia, which later became Chester's first cathedral.
+You can find more information <a href="https://en.wikipedia.org/wiki/Chester" target="_blank">here</a></p>
+
+    <!-- Add an optional button to close the popup -->
+    <button class="my_popup_close">Close</button>
+
+  </div>
+
+
+
+
+          <div class="container-fluid" style="background-color:#333333">
+            <div class="container container-footer col-12-sm">
+           <div class="row footer col-12-sm">
+              <div class="col-4 left location-mobile-footer">
+                <h3 class="padding-header" style="color:white;">LOCATION</h1>
+                <a href="#"><p class="footer-text">3481, Level 5, Chester, England.</p></a>
+    
+
+              </div>
+               <div class="col-4 center location-mobile-footer">
+            <h3 class="padding-header" style="color:white;">SOCIAL MEDIA LINKS</h1>
+                <a href="#"><p class="footer-text"><a href="https://www.facebook.com/chestertourist/" target="_blank"><i style=" color:white;" class="fa fa-facebook"></i></a> <i style=" color:white;" class="fa fa-linkedin"></i> <i style=" color:white;" class="fa fa-skype"> </i><i style=" color:white;" class="fa fa-youtube"> </i><i style=" color:white;" class="fa fa-twitter"> </i> </p> </a>
+    
+
+
+              </div>
+               <div class="col-4 right location-mobile-footer">
+                  <h3 class="padding-header" style="color:white;">CONTACT US</h1>
+                <a href="#"><p class="footer-text">(+44)-CHESTER-ENG</p></a>
+                <a href="#"><p class="footer-text">chestertourist@support.com</p></a>
+
+    
+
+
+              </div>
+
+          </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color:#333">
+      <p style="color:white; text-align:center; font-size:13px; padding-bottom:15px;">Chester Tourist ©</p>
+    </div>
+
+
+<script>
+//   $(".activities-button").click(function() {
+//   $(".nightlife").fadeOut();
+//   $(".skydiving").fadeOut();
+//   $(".bungee").fadeOut();
+//   $(".foodandwine").fadeOut();
+//   $(".cafes").fadeOut();
+
+
+// });
+
+</script>
+
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+

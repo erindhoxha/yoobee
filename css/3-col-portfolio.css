@@ -1,0 +1,248 @@
+/*!
+ * Start Bootstrap - 3 Col Portfolio (https://startbootstrap.com/template-overviews/3-col-portfolio)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-3-col-portfolio/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 54px;
+  box-sizing:border-box;
+  font-family:Helvetica;
+}
+.button-cv {
+  background-color:#00bcd4;
+  border:none;
+  color:white;
+  border-radius:10px;
+}
+.button-cv:hover{
+  background-color:#009688;
+  color:white;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.pagination {
+  margin-bottom: 30px;
+}
+
+.jumbotron {
+  background:url("http://t.wallpaperweb.org/wallpaper/abstract/1920x1080/dyedmadness1920x1080wallpaper1361.jpg");
+  background-size:cover;
+  background-position:center;
+  border-radius:0;
+}
+.cv-jumbotron {
+  background:url("http://imgs.abduzeedo.com/files/wallpapers/wpw338/wp_2880.jpg");
+  background-position:center;
+  background-size:cover;
+  margin-bottom:0;
+  margin-top:45px;
+}
+
+.ac-jumbotron {
+  background:url("../img/animation-college-banner.png");
+  background-position:center;
+  background-size:cover;
+  margin-bottom:30px;
+  margin-top:45px;
+  height:200px;
+}
+.yoobee-jumbotron {
+  background:url("../img/yobee-banner.png");
+  background-position:center;
+  background-size:cover;
+  margin-bottom:30px;
+  margin-top:45px;
+}
+.btn-lg {
+  margin-top:.5rem!important;
+  margin-bottom:.5rem!important;
+}
+.newworld-jumbotron {
+  background:url("../img/new-world-banner.png");
+  background-position:center;
+  background-size:cover;
+  margin-bottom:30px;
+  margin-top:45px;
+  height:200px;
+}
+
+.dotaquiz-jumbotron {
+  background:url("../img/dotaquiz-banner.png");
+  background-position:center;
+  background-size:cover;
+  margin-bottom:30px;
+  margin-top:45px;
+  height:200px;
+}
+
+.subway-jumbotron {
+  background:url("../img/subway-banner.png");
+  background-position:center;
+  background-size:cover;
+  margin-bottom:30px;
+  margin-top:45px;
+  height:200px;
+}
+
+.freecodecamp-jumbotron {
+  background:url("../img/freecodecampbanner.png");
+  background-position:center;
+  background-size:cover;
+  margin-bottom:30px;
+  margin-top:30px;
+  height:200px;
+}
+
+.vidapp-banner {
+  background:url("../img/vidapp-banner.png");
+  background-position:center;
+  height:200px;
+}
+
+.container-fluid {
+  padding:0;
+}
+.jumbotron h1, .jumbotron p {
+  padding-left:20px;
+}
+.img-logo {
+width:100% !important;
+}
+
+#skill-images {
+ margin-bottom:100px;
+}
+#skill-images div {
+  padding:20px;
+}
+.breadcrumb {
+  margin-bottom:0;
+  border-radius:0;
+  position:fixed;
+  width:100%;
+  z-index:1;
+}
+.breadcrumb a {
+  color:white;
+}
+
+.card-title a {
+  color:black;
+}
+#section1 {
+  height:100vh;color: #fff; background:#333;
+}
+#section2 {
+  padding-top:50px;height:100vh;color: #fff; background-color:#009688;
+}
+#section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+#section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+#section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+
+@media only screen and (max-width: 575px) {
+.container-images {
+  display:none;
+}
+}
+
+
+
+/* MASTER CSS */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+
+
+/* Icon Drop */
+@-webkit-keyframes hvr-icon-drop {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  51%,
+	100% {
+    opacity: 1;
+  }
+}
+@keyframes hvr-icon-drop {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  51%,
+	100% {
+    opacity: 1;
+  }
+}
+/* Icon Drop */
+.hvr-icon-drop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-icon-drop .hvr-icon {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.hvr-icon-drop:hover .hvr-icon, .hvr-icon-drop:focus .hvr-icon, .hvr-icon-drop:active .hvr-icon {
+  opacity: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-animation-name: hvr-icon-drop;
+  animation-name: hvr-icon-drop;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}

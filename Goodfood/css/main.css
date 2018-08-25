@@ -1,0 +1,980 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family:'Quicksand', 'Montserrat', sans-serif;
+
+}
+body {
+    box-sizing:border-box;
+}
+
+.image-container, 
+.text-container-section, 
+subscriptions,
+icons {
+    background-color:white;
+}
+  /* Hero image with text / buttons */
+
+.overlay {
+    background-color:black;
+    height:110vh;
+}
+#myVideo {
+    opacity:0.7;
+}
+
+.hero-image {
+    background:url("../Contents/1.jpg");
+    height:100vh;
+    background-size:cover;
+}
+.hero-items {
+    margin:0 auto;
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.6);
+}
+.hero-text {
+    width:85%;
+    text-align:left;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:white;
+}
+.first-button, .second-button {
+    margin-top:10px;
+}
+.first-button {
+  background-color:#d78242;
+  margin-right:2%;
+  border-radius:30px;
+  padding:13px 35px 13px 35px;
+  color:white;
+  border:none;
+}
+.first-button:hover {
+    background-color:white;
+    color:#d78242;
+}
+.second-button {
+    background-color:transparent;
+    border-radius:30px;
+    padding:13px 40px 13px 40px;
+    color:#d78242;
+    border:1px solid #d78242;
+  }
+  .second-button:hover {
+      background-color:#d78242;
+      color:white;
+  }
+  /* Hero image with text / buttons */
+
+
+
+  /* The first container */
+  .text-header {
+      text-align:center;
+      font-size:1.7rem;
+      font-weight:100;
+      width:90%;
+      margin:0 auto;
+  }
+  .text-container-paragraph {
+      width:90%;
+      margin:0 auto;
+  }
+  .text-container-paragraph p {
+      text-align:left;
+      font-size:1.1rem;
+      font-weight:100;
+      color:#333;
+  }
+  .text-container {
+    margin-top:50px;
+    position:relative;
+    z-index:1;
+    margin-bottom:100px;
+  }
+  .text-container::after {
+    content : "";
+    position: absolute;
+    left: 35%;
+    top: 100%;
+    height  : 1px;
+    width   : 30%;  /* or 100px */
+    border-bottom:5px solid orange;
+    margin-top:50px;
+  }
+/* First container */
+
+
+
+/* ICON ITEMS */
+.icon {
+    margin-top:50px;
+}
+  .icon-items {
+      width:90%;
+      margin:30px auto;
+  }
+  .icon-items p {
+      font-size:1rem;
+      color:#333;
+  }
+  .icon-items h3 {
+      font-size:1.3rem;
+      font-weight:100;
+  }
+/* ICON ITEMS */
+
+
+
+
+/* ROW IMAGES */
+.image-container {
+    float:left;
+}
+.row-first img {
+    width:25%;
+    margin:0;
+    padding:0;
+    float:left;
+}
+
+.text-container-section {
+    clear:both;
+    padding-top:5px;
+    
+}
+/* HOW IT WORKS */
+
+
+
+/* IPHONE IMAGE */
+.text-container-image {
+    width:90%;
+    margin:0 auto;
+}
+.text-container-image p {
+    text-align:left;
+    font-size:1.5rem;
+}
+.text-container-image img {
+    width:100%;
+    margin:0 auto;
+}
+.text-container-image {
+    width: 40%;
+    margin: 0 auto;
+}
+/* iPHONE IMAGE  */
+
+/* Number & Text - Subscriptions */
+.subscriptions {
+    width:100%;
+    display:inline;
+    float:left;
+}
+.number-left {
+    width:10%;
+    float:left;
+    padding:15px;
+}
+.text-right {
+    width:90%;
+    margin:0 auto;
+}
+.number-left img {
+    width:100%;
+}
+/* NUMBER & TEXT */
+.ajs-close {
+    float:right;
+}
+
+/* ICONS */
+.android-icon {
+   width:180px; 
+   padding:0 20px 0px 20px; 
+   transition: all .2s ease-in-out;
+}
+.apple-icon {
+    width:200px; 
+    padding:20px; 
+    transition: all .2s ease-in-out;
+}
+.apple-icon:hover {
+    transform: scale(1.1);
+}
+.android-icon:hover {
+   transform: scale(1.1);
+}
+.icons {
+    clear:both;
+}
+/* ICONS */
+
+
+/* CITIES */
+.image-container {
+    width:100%;
+    text-align:center;
+}
+.img-city {
+    width:90%;
+}
+.description-container {
+    width:90%;
+    margin:0 auto;
+    clear:both;
+}
+.description-container h3 {
+    padding-top:20px;
+    font-weight:100;
+}
+
+.user-textbox {
+    line-height:26px;
+    font-weight:100;
+    font-size:0.9rem;
+}
+.icon-fa {
+    color:#d78242;
+}
+.user-textbox a {
+    color:#d78242;
+}
+
+/* CITIES */
+
+
+/* TESTIMONIAL */
+
+.testimonial-image {
+    background:url("../Contents/1.jpg");
+    height:100vh;
+    background-size:cover;
+    margin-top:50px;
+}
+.testimonial-items {
+    margin:0 auto;
+    width:100%;
+    height:95vh;
+    background-color:rgba(0, 0, 0, 0.6);
+}
+.testimonial-text {
+    width:100%;
+    text-align:center;
+    padding-top:10px;
+    color:white;
+    font-weight:100;
+    margin-bottom:50px;
+}
+.testimonial-text h3 {
+    font-weight:100;
+    width:90%;
+    margin:0 auto;
+    font-size:1.5rem;
+}
+/* Testimonial */
+
+/* Testimonial Customers */
+
+.customer-testimonial p {
+    color:white;
+    width:90%;
+}
+.customer-testimonial {
+    margin:0 auto;
+    width:90%;
+    line-height:25px;
+}
+.customer-testimonial img {
+    border-radius:50%;
+    height:50px;
+}
+/* Testimonial Customers */
+
+/* PRICE CONTAINER */
+.price-container {
+    width:90%;
+    margin:0 auto;
+    clear:both;
+}
+.price-container h1 {
+    padding-top:20px;
+    font-weight:100;
+}
+.price-container h4 {
+    font-size:4rem;
+    margin-top:2.8rem;
+    margin-bottom:0;
+}
+
+.price-textbox {
+    line-height:26px;
+    font-weight:100;
+    font-size:0.9rem;
+    color:#d78242;
+}
+.small {
+    font-size:20px;
+}
+.price-paragraph {
+    color:#333;
+}
+.price-container-section {
+    width:90%;
+    margin:0 auto;
+    background-color:#f4f4f4;
+}
+.price-container {
+    background-color:#f4f4f4;
+}
+
+/* PRICE CONTAINER */
+
+/* MEAL LIST */
+.meal-list ul li {
+    list-style:none;
+}
+
+.meal-list ul {
+    padding:20px 20px 20px 40px;
+    border:1px solid #ebebeb;
+    background-color:white;
+}
+
+.meal-list ul li {
+    padding:10px;
+    font-size:1.1rem;
+    text-align:left;
+}
+
+.meal-list ul li i {
+    color:#d78242;
+}
+.meal-list ul {
+    text-align:center;
+}
+.meal-button {
+    background-color:#d78242;
+    color:white;
+    border:none;
+    padding:20px 50px 20px 50px;
+    margin-top:20px;
+    border-radius:30px;
+}
+.meal-button:hover {
+    background-color:white;
+    border:1px solid #d78242;
+    color:#d78242;
+    cursor:pointer;
+}
+.meal-button-outline {
+    background-color:transparent;
+    color:#d78242;
+    border:1px solid #d78242;
+    padding:20px 50px 20px 50px;
+    margin-top:20px;
+    border-radius:30px;
+}
+
+.meal-button-outline:hover {
+    background-color:#d78242;
+    color:white;
+}
+/* MEAL LIST */
+
+
+/* FORM */
+.form ul li {
+    list-style:none;
+    padding: 10px 10px 10px 0px;
+}
+
+.form input {
+    width:90%;
+}
+.form input[type="checkbox"] {
+    width:30px;
+}
+.form button {
+    margin-left:40px;
+}
+/* FORM */
+
+/* FOOTER */
+footer {
+    background-color:#333;
+    margin:0;
+    padding:0;
+}
+.footer .first-list {
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    padding:30px;
+}
+footer .footer .first-list li {
+    color:white;
+    list-style:none;
+    flex-direction:column;
+    padding:10px;
+}
+.footer p {
+    text-align:center;
+    color:white;
+    padding:20px 20px 20px 20px;
+    font-size:0.8rem;
+    margin:0;
+}
+.second-list {
+    display:flex;
+    justify-content:center;
+    width:100%;
+    padding:0;
+}
+.second-list li {
+    color:white;
+    list-style:none;
+    padding:10px;
+}
+/* FOOTER */
+
+
+
+/* tablet portrait */
+@media only screen and (min-width : 768px) {
+
+    /* HEADER TABLET */
+    .text-container-paragraph p {
+        text-align:center;
+    }
+
+    .price-container-section {
+        min-height:510px;
+    }
+
+    .form {
+        width:50%;
+        margin:50px auto;
+        padding:20px;
+        border:1px solid #ebebeb;
+    }
+    .icon-items {
+        width:40%;
+        float:left;
+        padding-left:50px;
+    }
+    .icon-items p {
+        text-align:left;
+    }
+    .text-container-image {
+        width:20%;
+        float:left;
+        padding-left:20%;
+    }
+    /* HEADER TABLET */
+
+    /* SUBSCRIPTION ICONS TABLET */
+    .subscriptions {
+        width:34%;
+        margin-left:10px;
+        height:100px;
+    }
+    .subscriptions-icons {
+        width:50%;
+        margin-left:10px;
+        display:inline;
+        float:left;
+        padding-left:30px;
+    }
+    .android-icon {
+        width:150px; 
+        padding:0 20px 0px 20px; 
+  
+     }
+
+     .apple-icon {
+         width:150px; 
+         padding:20px 0px 20px 20px; 
+     }
+
+
+    .text-right {
+        margin-left:56px;
+    }
+    /* SUBSCRIPTION ICONS TABLET */
+
+    /* CITIES TABLET */
+    .image-container-section {
+        width:25%;
+        float:left;
+        margin-bottom:80px;
+    }
+    /* CITIES TABLET */
+
+    /* TESTIMONIAL TABLET */
+    .testimonial-image {
+        clear:both;
+    }
+    .image-container-wrapper {
+        padding:15px;
+    }
+    .customer-testimonial {
+        width:32%;
+        float:left;      
+    }
+    .first_child_testimonial {
+        padding-left:20px;
+
+    }
+    .testimonial-items {
+        text-align:left;
+    }
+    .testimonial-image {
+        height:57vh;
+    }
+    /* TESTIMONIAL TABLET */
+    .price-container-section {
+        width:30%;
+        margin:0;
+        float:left;
+        margin:10px;
+        background-color:white;
+        border:1px solid #ebebeb;
+    }
+    .price-container {
+        background-color:white;
+    }
+    .meal-list ul {
+        border:none;
+        border-top:1px solid #ebebeb;
+        padding:0px;
+    }
+    .meal-list .meal-button {
+        width:150px;
+        height:50px;
+        padding:0;
+    }
+    .meal-list .meal-button-outline {
+        width:150px;
+        height:50px;
+        padding:0;
+    }
+    .price-container h4 {
+        font-size:3rem;
+    }
+
+
+}
+/* TABLET PORTRAIT */
+
+
+
+/* small desktop */
+@media only screen and (min-width : 1024px) {
+    .price-container-wrapper {
+        margin:0 auto;
+        padding:0% 10% 10% 10%;
+    }
+    .price-container-section {
+        min-height:500px;
+    }
+    .icon-items {
+        width:20%;
+    }
+  
+}
+/* SMALL DESKTOP */
+
+
+
+
+
+
+
+
+
+/* large desktop */
+@media only screen and (min-width : 1200px) {
+        .icon-items-container {
+            margin:0 auto;
+            width:80%;
+        }
+        .image-container-wrapper {
+            width:80%;
+            margin:0 auto;
+        }
+        .customer-wrapper {
+            width:70%;
+            padding-top:30px;
+            margin:0 auto;
+        }
+        .hero-text h1{
+            font-size:2.5rem;
+            margin-bottom:0;
+        }
+        .text-container-image img {
+            width:60%;
+            padding-left:40%;
+        }
+        .text-container::after {
+            content : "";
+            position: absolute;
+            left: 45%;
+            top: 0%;
+            height  : 1px;
+            width   : 10%;  /* or 100px */
+            border-bottom:5px solid #d78242;
+            margin-top:80px;
+          }
+          .price-container-section {
+              min-height:500px;
+          }
+}
+/* LARGE DESKTOP */
+
+
+/* MODAL CSS */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width:80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.modal-content .form {
+    width:80%;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* MODAL CSS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
