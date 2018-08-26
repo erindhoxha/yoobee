@@ -27,12 +27,20 @@ body {
 .pagination {
   margin-bottom: 30px;
 }
+.text-container {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .jumbotron {
   background:url("http://t.wallpaperweb.org/wallpaper/abstract/1920x1080/dyedmadness1920x1080wallpaper1361.jpg");
   background-size:cover;
   background-position:center;
   border-radius:0;
+  height:100vh;
 }
 .cv-jumbotron {
   background:url("http://imgs.abduzeedo.com/files/wallpapers/wpw338/wp_2880.jpg");
