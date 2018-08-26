@@ -4,3 +4,11 @@ $("#button-scroll").click(function() {
         scrollTop: $("#portfolio-work").offset().top},
         'slow');
 });
+
+
+$(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar-fixed-top");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
