@@ -267,7 +267,7 @@ icons {
 
 .testimonial-image {
     background:url("../Contents/1.jpg");
-    height:100vh;
+    height:110vh;
     background-size:cover;
     margin-top:50px;
 }
@@ -470,6 +470,7 @@ footer .footer .first-list li {
     .price-container-section {
         min-height:510px;
     }
+
 
     .form {
         width:50%;
