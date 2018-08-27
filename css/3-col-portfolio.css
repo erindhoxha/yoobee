@@ -9,10 +9,10 @@ body {
   font-family:Helvetica;
 }
 .button-cv {
-  background-color:#00bcd4;
+  background-color:#fff;
   border:none;
-  color:white;
-  border-radius:10px;
+  color:#333;
+  border-radius:0px;
 }
 .custom-toggler.navbar-toggler {
   border-color: rgba(255,255,255, 0);
@@ -20,6 +20,14 @@ body {
 .custom-toggler .navbar-toggler-icon {
 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
+.custom-toggler-light.navbar-toggler {
+  border-color: rgba(0,0,0, 0);
+}
+.custom-toggler-light .navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 
 /* NAV BAR */
 .navbar {
@@ -31,10 +39,18 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
   transition: background-color 200ms linear;
   border:none;
 }
+.light-navbar-fixed-top {
+}
+.light-navbar-fixed-top.scrolled {
+  background-color: white !important;
+  transition: background-color 200ms linear;
+  border-bottom:1px solid white;
+}
 /* NAV BAR */
 .button-cv:hover{
-  background-color:#009688;
+  background-color:#333;
   color:white;
+  border:none;
 }
 
 .portfolio-item {
@@ -64,7 +80,6 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
   background-position:center;
   background-size:cover;
   margin-bottom:0;
-  margin-top:45px;
 }
 
 .ac-jumbotron {
@@ -72,15 +87,14 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
   background-position:center;
   background-size:cover;
   margin-bottom:30px;
-  margin-top:45px;
-  height:200px;
+  height:330px;
 }
 .yoobee-jumbotron {
   background:url("../img/yobee-banner.png");
   background-position:center;
   background-size:cover;
   margin-bottom:30px;
-  margin-top:45px;
+  height:30vh;
 }
 .btn-lg {
   margin-top:.5rem!important;
@@ -91,8 +105,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
   background-position:center;
   background-size:cover;
   margin-bottom:30px;
-  margin-top:45px;
-  height:200px;
+  height:330px;
 }
 
 .dotaquiz-jumbotron {
@@ -100,8 +113,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
   background-position:center;
   background-size:cover;
   margin-bottom:30px;
-  margin-top:45px;
-  height:200px;
+  height:330px;
 }
 
 .subway-jumbotron {
@@ -109,8 +121,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
   background-position:center;
   background-size:cover;
   margin-bottom:30px;
-  margin-top:45px;
-  height:200px;
+  height:330px;
 }
 
 .freecodecamp-jumbotron {
@@ -118,22 +129,19 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
   background-position:center;
   background-size:cover;
   margin-bottom:30px;
-  margin-top:30px;
-  height:200px;
+  height:330px;
 }
 
 .vidapp-banner {
   background:url("../img/vidapp-banner.png");
   background-position:center;
-  height:200px;
+  height:330px;
 }
 
 .container-fluid {
   padding:0;
 }
-.jumbotron h1, .jumbotron p {
-  padding-left:20px;
-}
+
 .img-logo {
 width:100% !important;
 }

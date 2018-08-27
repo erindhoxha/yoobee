@@ -472,6 +472,7 @@ footer .footer .first-list li {
     }
 
 
+
     .form {
         width:50%;
         margin:50px auto;
@@ -601,6 +602,11 @@ footer .footer .first-list li {
     .icon-items {
         width:20%;
     }
+
+.testimonial-image {
+    height:70vh;
+
+}
   
 }
 /* SMALL DESKTOP */
