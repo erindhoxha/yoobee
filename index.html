@@ -26,10 +26,11 @@
 
   <body>
 
-
+    <!-- LOADING -->
+    <img id = "loading" src ="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt = "Loading indicator">
     <!-- NAVIGATION -->
 
-  <!-- HEADER -->
+    <!-- HEADER -->
     <div class="container-fluid">
       <div class="jumbotron">
 
@@ -287,9 +288,19 @@
       <!-- /.container -->
     </footer>
     <script src="vendor/js/js.js"></script>    
+    <script src="vendor/jquery/jquery-3.3.1.min.js"></script>    
+    <script src="vendor/jquery/jquery-3.3.1.js"></script>    
+
+
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(window).load(function() {
+      $('#loading').hide();
+      });
+</script>
+  
+
   </body>
 
 </html>
