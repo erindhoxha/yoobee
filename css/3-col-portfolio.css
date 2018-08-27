@@ -12,8 +12,15 @@ body {
   background-color:#fff;
   border:none;
   color:#333;
-  border-radius:0px;
+  padding:10px 25px 10px 25px;
+  border-radius:10px;
 }
+.button-cv:hover{
+  background-color:#333;
+  color:white;
+  border:none;
+}
+
 .custom-toggler.navbar-toggler {
   border-color: rgba(255,255,255, 0);
 }
@@ -47,11 +54,6 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
   border-bottom:1px solid white;
 }
 /* NAV BAR */
-.button-cv:hover{
-  background-color:#333;
-  color:white;
-  border:none;
-}
 
 .portfolio-item {
   margin-bottom: 30px;
