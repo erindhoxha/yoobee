@@ -8,7 +8,18 @@ body {
   box-sizing:border-box;
   font-family:Helvetica;
 }
+#testimonials-header {
+  padding-top:50px;
+  padding-bottom:5px;
+}
+#testimonials-paragraph {
+  padding-bottom:30px;
+  border-bottom:1px solid #ebebeb;
+}
 .nav-link.invert {
+  color:white !important;
+}
+.nav-link.invert:hover {
   color:white !important;
 }
 #imagelogo.invert {
@@ -48,7 +59,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 /* NAV BAR */
 .card {
   border:none;
-  box-shadow:2px 3px 15px -8px;
+  box-shadow:2px 3px 15px -10px;
 }
 .navbar {
   background-color:transparent !important;
