@@ -8,7 +8,9 @@ body {
   box-sizing:border-box;
   font-family:Helvetica;
 }
-
+.card-img-top {
+  border-radius:25px;
+}
 .button-cv {
   background-color:#fff;
   border:none;
