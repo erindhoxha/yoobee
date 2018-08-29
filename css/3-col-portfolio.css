@@ -8,19 +8,25 @@ body {
   box-sizing:border-box;
   font-family:Helvetica;
 }
+.nav-link.invert {
+  color:white !important;
+}
+#imagelogo.invert {
+  filter: invert(100%);
+}
 .card-img-top {
   border-radius:25px;
 }
 .button-cv {
-  background-color:#fff;
+  background-color:#333;
   border:none;
-  color:#333;
+  color:#fff;
   padding:10px 25px 10px 25px;
   border-radius:10px;
 }
 .button-cv:hover{
-  background-color:#333;
-  color:white;
+  background-color:#ebebeb;
+  color:#333;
   border:none;
 }
 
@@ -46,7 +52,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 }
 .navbar {
   background-color:transparent !important;
-  border-bottom:1px solid white;
+  /* border-bottom:1px solid #333; */
 }
 .navbar-fixed-top.scrolled {
   background-color: #333 !important;
@@ -78,7 +84,8 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 }
 
 .jumbotron {
-  background:url("http://t.wallpaperweb.org/wallpaper/abstract/1920x1080/dyedmadness1920x1080wallpaper1361.jpg");
+  /*background:url("http://t.wallpaperweb.org/wallpaper/abstract/1920x1080/dyedmadness1920x1080wallpaper1361.jpg");*/
+  background-color:white;
   background-size:cover;
   background-position:center;
   border-radius:0;
