@@ -40,6 +40,9 @@ body {
   color:#333;
   border:none;
 }
+#div-greeting h1 {
+  font-size:2rem;
+}
 /* 
 .custom-toggler.navbar-toggler {
   border-color: rgba(255,255,255, 0);
@@ -346,7 +349,7 @@ width:100% !important;
 .card .carousel-caption .col-sm-9 {
   text-align: left;
 }
-.navi a {
+.nav i a {
     text-decoration:none;
 }
 a > .ico {
@@ -367,6 +370,16 @@ a:hover > .ico {
     .text-container h1 {
         font-size:2.2rem;
     }
+    .button-cv {
+         padding: 10px;
+    font-size: 16px;
+    }
+    #div-greeting h1 {
+  font-size:1.5rem;
+}
+    #div-greeting p {
+  font-size:0.9rem;
+}
     .text-container {
       width:90%;
     }
