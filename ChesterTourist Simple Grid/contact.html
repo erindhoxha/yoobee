@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/simple-grid.css">
+    <!-- include the style -->
+<link rel="stylesheet" href="css/alertify.min.css" />
+<!-- include a theme -->
+<link rel="stylesheet" href="css/default.min.css" />
 
     <!-- JavaScript -->
 <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/alertify.min.js"></script>
@@ -43,7 +47,7 @@
     <body>
          <div class="container-fluid" >
             <div class="row banner">
-               <div class="banner-image-activities">
+               <div class="banner-image-contact">
                 <div class="col-12">
                     <div class="topnav" id="myTopnav">
                       <a href="index.html">Home</a>
@@ -60,53 +64,49 @@
           </div>
 
              <!-- BANNER -->
-          <div class="container">
-             <div class="row welcome">
-                <h1 class="center header-title header-activities">Chester has some amazing activities which you can enjoy!</h1>
-                <p class="center paragraph-text">Chester (Welsh: Caer [ˈkai̯r]) is a walled city in Cheshire, England, on the River Dee, close to the border with Wales. With a population of 118,200 in 2011,[3] it is the most populous settlement of Cheshire West and Chester, which had a population of 332,200 in 2014.[4] Chester was granted city status in 1541.</p>
+     <div class="container">
+      <div class="icon-container">
+          <h1 class="center header-title">Contact Us</h1>
+            <p class="center contact-paragraph">Email us with any questions or iqnuiries or call 09-HARDSHELL. We would be happy
+                to answer your questions and set up a meeting with you. Hardshell can help you set apart from the market!
+            </p>
+                 <div class="col-icon">
+                    <i class="fa fa-phone"></i>
+                    <a href="#"><p>NZ: +64212233445</p></a>
+                    <button class="btn-contact call-button">Call</button>
+
+                 </div>
+                  <div class="col-icon">
+                    <i class="fa fa-envelope"></i>
+                    <a href="#"><p>tourist@chester.com</p></a>
+                    <button onclick="location.href='mailto:em@i.l';" class="btn-contact email-button">Email</button>
+
+                 </div>
+                 <div class="col-icon">
+                    <i class="fa fa-twitter"></i>
+                    <a href="#"><p>@chester</p></a>
+                    <button class="btn-contact tweet-button">Tweet</button>
+
+                 </div>
+            </div>
           </div>
 
 
-              <!-- IMAGE ROW  -->
-     <div class="row">
-          <div class="col-4 col-12-sm" id="fishing-image">
-          <a href="#"><div class="placeholder nightlife"><h4 class="tags" id="nightlife">Chester Nightlife</h4></div></a>
-     </div>
-          <div class="col-4 col-12-sm" id="nightlife-image">
-          <a href="#"> <div class="placeholder skydiving"><h4 class="tags" id="fishing">Sky Diving</h4></div></a>
-     </div>
-          <div class="col-4 col-12-sm" id="painting-image">
-            <a href="#"> <div class="placeholder bungee"><h4 class="tags" id="painting">Bungee Jumping</h4></div></a>
-         </div>
-     </div>
-
-     <div class="row">
-        <div class="col-4 col-12-sm">
-            <a href="#"> <div class="placeholder cafes" id="imagasdasde"><h4 class="tags" id="buildings">Cafes</h4></div></a>
-        </div>
-        <div class="col-4 col-12-sm">
-           <a href="#">  <div class="placeholder shopping"><h4 class="tags" id="activity">Shopping</h4></div></a>
-        </div>
-        <div class="col-4 col-12-sm">
-           <a href="#">  <div class="placeholder foodandwine"><h4 class="tags" id="people">Food & Wine</h4></div></a>
-         </div>
-     </div>
     <!-- CLOSING CONTAINER -->
  </div>
     <!-- CLOSING CONTAINER -->
     <div class="container-fluid">
     <div class="row">
-            <div class="cloud-form">
+            <div class="contact-form">
                 <div class="form">
                     <div class="form-style-6">
-                        <h1>Find and book</h1>
+                        <h1>Ask a question</h1>
                         <form>
-                        <input type="text" name="field1" placeholder="Search: Hotels, Flights" required/>
-                        <input type="text" name="field2" placeholder="From:" required/>
-                        <input type="text" name="field2" placeholder="To: Chester" required/>
-                        <input type="date" name="field2" placeholder="Depart date" required />
-                        <input type="date" name="field2" placeholder="Return date" required />
-                         <input type="submit" value="Find" style="font-size:18px;" />
+                        <input type="text" name="field1" placeholder="Name" required/>
+                        <input type="text" name="field2" placeholder="Email" required/>
+                        <input type="text" name="field2" placeholder="Company (optional)"/>
+                        <textarea type="text" rows="10" name="field2" placeholder="Ask a question" required></textarea>
+                         <input class="contact-submit" type="submit" value="Send" style="font-size:18px;" />
                         </form>
                     </div>
                 </div>
@@ -114,31 +114,6 @@
         </div>
     </div>
 
-    <div class="container">
-           <div class="row row-article">
-             <div class="col-6 col-12-sm article-image" id="fishing-image">
-                <div class="placeholder architecture"><h4 class="tags" id="nightlife">Architecture</h4></div>
-            </div>
-            <div class="col-6 col-12-sm">
-              <h1 class="padding-header">Architecture</h1>
-              <p class="article-paragraph-first">Chester is one of the best preserved walled cities in Britain. It has a number of medieval buildings, but some of the black-and-white buildings within the city centre are Victorian restorations.</p>
-              <button class="button-article hvr-icon-back my_popup_open"><i class="fa fa-chevron-circle-left hvr-icon"></i>Read more</button>
-            </div>
-          </div>
-    </div>
-
-       <div class="container" style="padding-bottom:60px;">
-           <div class="row row-article">
-                 <div class="col-6 col-12-sm">
-              <h1 class="padding-header-second">Buildings</h1>
-              <p class="article-paragraph">Apart from a 100-metre (330 ft) section, the listed Grade I walls are almost complete.[6] The Industrial Revolution brought railways, canals, and new roads to the city.</p>
-              <button class="button-article-second hvr-icon-forward my_popup_open">Read more<i class="fa fa-chevron-circle-right hvr-icon"></i></button>
-            </div>
-             <div class="col-6 col-12-sm article-image" id="fishing-image">
-                <div class="placeholder architecture-2"><h4 class="tags" id="nightlife">Buildings</h4></div>
-            </div>
-          </div>
-    </div>
       <!-- Add content to the popup -->
   <div id="my_popup">
 <p id="popup-text">Chester (Welsh: Caer [ˈkai̯r]) is a walled city in Cheshire, England, on the River Dee, close to the border with Wales. With a population of 118,200 in 2011,[3] it is the most populous settlement of Cheshire West and Chester, which had a population of 332,200 in 2014.[4] Chester was granted city status in 1541.
@@ -195,12 +170,18 @@ You can find more information <a href="https://en.wikipedia.org/wiki/Chester" ta
 //   $(".bungee").fadeOut();
 //   $(".foodandwine").fadeOut();
 //   $(".cafes").fadeOut();
-
-
+$(".btn-contact").on("click", function(){
+alertify.alert('Something');
+});
+$(".contact-submit").on("click", function(){
+    alertify.alert('Thank you for submitting!');
+});
+$(".call-button")
+$(".tweet-button")
 // });
 
 </script>
-
+<script src="js/alertify.min.js"></script>
     </body>
 
 </html>
