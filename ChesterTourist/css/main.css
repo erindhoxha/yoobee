@@ -509,7 +509,7 @@ input[type="submit"] {
   }
   .topnav.responsive a {
     float: none;
-    display: block;
+    display: block !important;
     text-align: left;
   }
   .topnav a:not(:first-child) {display: none;}
