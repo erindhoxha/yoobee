@@ -12,6 +12,7 @@ html {
   background-color:white;
   float:right;
 }
+
 i {
   padding:5px;
 }
@@ -122,12 +123,17 @@ padding:14px
   float:left;
   text-align:center;
   font-size:50px;
+  margin-bottom:50px;
 }
 #logo {
   float:right;
   color:white;
   font-size:2em;
   padding:10px 10px 0px 0px;
+}
+.icon:hover {
+  background-color:transparent !important;
+  color:white !important;
 }
 i:hover {
   background-color:white;
@@ -164,6 +170,12 @@ h5 {
   border:none;
   background-color:#333;
   color:white;
+  cursor:pointer !important;
+  z-index:1;
+  transition:0.3s;
+}
+.clearfix {
+  clear:both !important;
 }
 .btn-contact:hover {
   background-color:#555;
@@ -182,8 +194,25 @@ input[type="submit"] {
   text-decoration: none;
 }
 .icon-container {
-  margin-bottom:200px;
+  margin-bottom:100px;
+  text-align:center;
 }
+.search-input {
+  padding:10px;
+  width:40%;
+  background-color:#ebebeb;
+  border:none;
+  border-radius:5px;
+  font-size:15px;
+}
+#submit-button {
+  padding:10px;
+  border:none;
+  background-color:#03dcb3;
+  font-size:15px;
+  color:white;
+}
+
 .placeholder {
   min-height:250px;
   max-height:250px;
@@ -219,6 +248,12 @@ input[type="submit"] {
 .banner-image {
   height:800px;
   background-image:url("https://i.imgur.com/A8qAeXt.jpg");
+  background-size:cover;
+  background-position:center;
+}
+.banner-image-discover {
+  height:800px;
+  background-image:url("../images/discoverbanner.png");
   background-size:cover;
   background-position:center;
 }
@@ -285,6 +320,10 @@ input[type="submit"] {
   background-color:white;
   color:black;
   opacity:0.9;
+  border-radius:5px;
+}
+#myTopnav a {
+  transition:0.3s;
 }
 
 @media screen and (max-width: 684px) {
@@ -305,6 +344,9 @@ input[type="submit"] {
     height:400px;
   }
   .banner-image-contact {
+    height:400px;
+  }
+  .banner-image-discover {
     height:400px;
   }
   .banner-image-activities {
@@ -488,9 +530,6 @@ input[type="submit"] {
 .ajs-close {
   float:right;
 }
-
-
-
 @media screen and (max-width: 650px) {
 
   .col-icon {
@@ -498,11 +537,10 @@ input[type="submit"] {
     margin-bottom:50px;
   }
 }
-
-
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
+
     position: absolute;
     right: 0;
     top: 0;
