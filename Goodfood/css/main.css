@@ -613,7 +613,15 @@ footer .footer .first-list li {
 
 
 
-
+.testimonial-text-container {
+    content : "";
+    position: absolute;
+    left: 45%;
+    top: 0%;
+    height  : 1px;
+    width   : 10%;  /* or 100px */
+    border-bottom:5px solid #d78242;
+  }
 
 
 

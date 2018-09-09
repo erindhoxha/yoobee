@@ -1,0 +1,964 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+
+<div class="topnav" id="myTopnav">
+  <a style="padding:5px;" href="#home" class="hvr-underline-from-center logo-1"><img src="img/logo.png"></a>
+  <a href="#contact" class="hvr-underline-from-center breadcrumb-1">Movies</a>
+  <a href="#contact" class="hvr-underline-from-center breadcrumb-1">TV Shows</a>
+  <a href="#contact" class="hvr-underline-from-center breadcrumb-1">All</a>
+  <a href="#home" class="active hvr-underline-from-center">Live TV & Guide</a>
+  <a href="#news" class="hvr-underline-from-center">OnDemand</a>
+  <a href="#about" class="hvr-underline-from-center logo-2"><img src="img/logo2.png"></a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<nav aria-label="breadcrumb breadcrumb-mobile" style="background-color:black;">
+    <ol class="breadcrumb" style="margin:0; display:none; background-color:black;  border-top:2px solid white;">
+      <li class="breadcrumb-item"><a href="#">Movies</a></li>
+      <li class="breadcrumb-item"><a href="#">TV shows</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="#">All</a></li>
+    </ol>
+  </nav>
+
+
+<div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">Random TV Show</h1>
+      <p>Sundays at 8:30pm on TVNZ 1</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis ut porro ducimus voluptates iusto itaque totam, quia quisquam earum perferendis!</p>
+      <button id="watch-first"><i class="fa fa-play"></i> WATCH FIRST</button>
+      <button id="favourites"><i class="fa fa-star"></i> FAVOURITE</button>
+      </div>
+    </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="">
+            <div class="component">
+                <main style="text-align:center;padding-top:30px;">
+                  <div class="sliders">
+                    <svg preserveAspectRatio="none" viewBox="0 0 140 100">
+                      <path d="" class="line-shadow"></path>
+                      <path d="" class="line"></path>
+                    </svg>
+              
+                    <div class="range-slider">
+                      <input style="background-color:transparent; color:transparent;" type="range" orient="vertical" min="0" max="100" />
+                      <div class="range-slider__bar"></div>
+                      <div class="range-slider__thumb"></div>
+                    </div>
+              
+                    <div class="range-slider">
+                      <input type="range" orient="vertical" min="0" max="100" />
+                      <div class="range-slider__bar"></div>
+                      <div class="range-slider__thumb"></div>
+                    </div>
+              
+                    <div class="range-slider">
+                      <input type="range" orient="vertical" min="0" max="100" />
+                      <div class="range-slider__bar"></div>
+                      <div class="range-slider__thumb"></div>
+                    </div>
+              
+                    <div class="range-slider">
+                      <input type="range" orient="vertical" min="0" max="100" />
+                      <div class="range-slider__bar"></div>
+                      <div class="range-slider__thumb"></div>
+                    </div>
+              
+                    <div class="range-slider">
+                      <input type="range" orient="vertical" min="0" max="100" />
+                      <div class="range-slider__bar"></div>
+                      <div class="range-slider__thumb"></div>
+                    </div>
+              
+           
+  
+                  </div>
+                </main>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- <div class="component">
+  <main style="text-align:center;padding-top:30px;">
+    <div class="sliders">
+      <svg preserveAspectRatio="none" viewBox="0 0 140 100">
+        <path d="" class="line-shadow"></path>
+        <path d="" class="line"></path>
+      </svg>
+
+      <div class="range-slider">
+        <input style="background-color:transparent; color:transparent;" type="range" orient="vertical" min="0" max="100" />
+        <div class="range-slider__bar"></div>
+        <div class="range-slider__thumb"></div>
+      </div>
+
+      <div class="range-slider">
+        <input type="range" orient="vertical" min="0" max="100" />
+        <div class="range-slider__bar"></div>
+        <div class="range-slider__thumb"></div>
+      </div>
+
+      <div class="range-slider">
+        <input type="range" orient="vertical" min="0" max="100" />
+        <div class="range-slider__bar"></div>
+        <div class="range-slider__thumb"></div>
+      </div>
+
+      <div class="range-slider">
+        <input type="range" orient="vertical" min="0" max="100" />
+        <div class="range-slider__bar"></div>
+        <div class="range-slider__thumb"></div>
+      </div>
+
+      <div class="range-slider">
+        <input type="range" orient="vertical" min="0" max="100" />
+        <div class="range-slider__bar"></div>
+        <div class="range-slider__thumb"></div>
+      </div>
+
+      <div class="range-slider">
+        <input type="range" orient="vertical" min="0" max="100" />
+        <div class="range-slider__bar"></div>
+        <div class="range-slider__thumb"></div>
+      </div>
+
+
+    </div>
+  </main>
+</div> -->
+
+<div class="container mt-5">
+  <div class="row">
+    
+    <div class="col-lg-12">
+              <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary mb-4" data-toggle="modal" data-target="#exampleModalCenter">
+    Recalibrate your suggestions!
+  </button>
+  
+  <button type="button" class="btn btn-dark pull-right hide-button mb-1">Hide</button>
+  <h1 class="row-1">Featured Videos</h1>
+
+    </div>
+  </div>
+    <div class="row row-1">
+
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="container2">
+        <a href="playvideo.html"><img class="img-responsive image2" src="img/image1.jpeg"></a>
+
+              <div class="middle2">
+                <div class="text2">Short Description, Rating etc. 9/10</div>
+              </div>
+            </div>
+      
+      </div>
+
+
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="container2">
+        <a href="playvideo.html"><img class="img-responsive image2" src="img/featured-img-1.png"></a>
+
+              <div class="middle2">
+                <div class="text2">Short Description, Rating etc. 9/10</div>
+              </div>
+            </div>
+      
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        
+            <img src="img/image2.jpeg">
+            <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+    
+
+          </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        
+              <img src="img/image3.jpeg">
+              <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+      
+
+            </div>
+    </div>
+          
+    <h1 style=" padding-top:30px;" >Get Started with TVNZ</h1>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+        <img class="img-responsive" src="img/tvnz-get-started.png">
+        <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+        
+      </div>
+      <div class="col-lg-3 col-md-6 mb-5">
+     
+          <img src="img/image1-2.jpeg">
+          <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+       
+
+        </div>
+      <div class="col-lg-3 col-md-6 mb-5">
+        
+            <img src="img/image1-4.jpeg">
+            <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+       
+
+          </div>
+      <div class="col-lg-3 col-md-6 mb-5">
+        
+              <img src="img/tvnz-get-started.png">
+              <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+       
+
+            </div>
+    </div>
+
+
+
+
+    <div class="row">
+      <div class="col-lg-9 col-md-6 col-sm-12 mb-5">
+        <img class="img-responsive" style="height:150px" src="https://via.placeholder.com/500x150">
+        
+      </div>
+      <div class="col-lg-3 col-md-6 mb-5">
+     
+          <img src="https://via.placeholder.com/500x290">
+
+        </div>
+
+    </div>
+
+
+
+
+    <h1>Comedy</h1>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+        <img class="img-responsive" src="img/comedy1.jpeg">
+        <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+      
+        
+      </div>
+      <div class="col-lg-3 col-md-6 mb-5">
+     
+          <img src="img/comedy2.jpeg">
+          <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+
+
+        </div>
+      <div class="col-lg-3 col-md-6 mb-5">
+        
+            <img src="img/comedy3.jpeg">
+            <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+    
+
+          </div>
+      <div class="col-lg-3 col-md-6 mb-5">
+        
+              <img src="img/comedy4.jpeg">
+              <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+      
+
+            </div>
+    </div>
+
+
+
+
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+          <img class="img-responsive" src="img/read-1.png">
+        
+          
+        </div>
+        <div class="col-lg-6 col-md-6 mb-5">
+       
+            <img src="img/read-2.png">
+  
+  
+          </div>
+
+
+      </div>
+
+
+
+
+
+      <h1 style="border-top:1px solid #ebebeb; padding-top:30px;" >TV Dads</h1>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+          <img class="img-responsive" src="img/tvdads1.jpeg">
+          <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+          
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+       
+            <img src="img/tvdads2.jpeg">
+            <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+         
+  
+          </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          
+              <img src="img/tvdads3.jpeg">
+              <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+         
+  
+            </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          
+                <img src="img/tvdads4.jpeg">
+                <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+         
+  
+              </div>
+      </div>
+
+
+
+
+
+
+      <h1 style="border-top:1px solid #ebebeb; padding-top:30px;" >New OUTtv Shows</h1>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+          <img class="img-responsive" src="img/new1.jpeg">
+          <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+          
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+       
+            <img src="img/new2.jpeg">
+            <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+         
+  
+          </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          
+              <img src="img/new3.jpeg">
+              <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+         
+  
+            </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          
+                <img src="img/new4.jpeg">
+                <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+         
+  
+              </div>
+      </div>
+
+
+      <h1 style="border-top:1px solid #ebebeb; padding-top:30px;" >Kids</h1>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+          <img class="img-responsive" src="img/kids1.jpeg">
+          <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+          
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+       
+            <img src="img/kids2.jpeg">
+            <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+         
+  
+          </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          
+              <img src="img/kids3.jpeg">
+              <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+         
+  
+            </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          
+                <img src="img/kids4.jpeg">
+                <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+         
+  
+              </div>
+      </div>
+
+
+
+      <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
+            <img class="img-responsive" src="img/watch-1.png">
+            <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+            
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
+         
+              <img src="img/watch-2.png">
+              <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+           
+    
+            </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
+            
+                <img src="img/watch-3.png">
+                <p class="text-left">A short description</p><i class="fa fa-star icon-right"></i>
+           
+    
+              </div>
+        </div>
+
+    </div>
+
+  </div>
+
+
+<!-- 
+    <div class="container-fluid container-dark container-tiles">
+        <div class="contain">
+
+            <div class="row row2">
+              <div class="row__inner">
+          
+                <div class="tile">
+                  <div class="tile__media">
+                    <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-1.jpg" alt=""  />
+                  </div>
+                  <div class="tile__details">
+                    <div class="tile__title">
+                      Top Gear
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="tile">
+                  <div class="tile__media">
+                    <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-2.jpg" alt=""  />
+                  </div>
+                  <div class="tile__details">
+                    <div class="tile__title">
+                      Top Gear
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="tile">
+                  <div class="tile__media">
+                    <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-3.jpg" alt=""  />
+                  </div>
+                  <div class="tile__details">
+                    <div class="tile__title">
+                      Top Gear
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="tile">
+                  <div class="tile__media">
+                    <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-4.jpg" alt=""  />
+                  </div>
+                  <div class="tile__details">
+                    <div class="tile__title">
+                      Top Gear
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="tile">
+                  <div class="tile__media">
+                    <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-5.jpg" alt=""  />
+                  </div>
+                  <div class="tile__details">
+                    <div class="tile__title">
+                      Top Gear
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="tile">
+                  <div class="tile__media">
+                    <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-6.jpg" alt=""  />
+                  </div>
+                  <div class="tile__details">
+                    <div class="tile__title">
+                      Top Gear
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="tile">
+                  <div class="tile__media">
+                    <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-7.jpg" alt=""  />
+                  </div>
+                  <div class="tile__details">
+                    <div class="tile__title">
+                      Top Gear
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="tile">
+                  <div class="tile__media">
+                    <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-8.jpg" alt=""  />
+                  </div>
+                  <div class="tile__details">
+                    <div class="tile__title">
+                      Top Gear
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="tile">
+                  <div class="tile__media">
+                    <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-9.jpg" alt=""  />
+                  </div>
+                  <div class="tile__details">
+                    <div class="tile__title">
+                      Top Gear
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="tile">
+                  <div class="tile__media">
+                    <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-10.jpg" alt=""  />
+                  </div>
+                  <div class="tile__details">
+                    <div class="tile__title">
+                      Top Gear
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="tile">
+                  <div class="tile__media">
+                    <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-11.jpg" alt=""  />
+                  </div>
+                  <div class="tile__details">
+                    <div class="tile__title">
+                      Top Gear
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="tile">
+                  <div class="tile__media">
+                    <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-12.jpg" alt=""  />
+                  </div>
+                  <div class="tile__details">
+                    <div class="tile__title">
+                      Top Gear
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="tile">
+                  <div class="tile__media">
+                    <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-13.jpg" alt=""  />
+                  </div>
+                  <div class="tile__details">
+                    <div class="tile__title">
+                      Top Gear
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="tile">
+                  <div class="tile__media">
+                    <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-14.jpg" alt=""  />
+                  </div>
+                  <div class="tile__details">
+                    <div class="tile__title">
+                      Top Gear
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="tile">
+                  <div class="tile__media">
+                    <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-15.jpg" alt=""  />
+                  </div>
+                  <div class="tile__details">
+                    <div class="tile__title">
+                      Top Gear
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="tile">
+                  <div class="tile__media">
+                    <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-16.jpg" alt=""  />
+                  </div>
+                  <div class="tile__details">
+                    <div class="tile__title">
+                      Top Gear
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="tile">
+                  <div class="tile__media">
+                    <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-17.jpg" alt=""  />
+                  </div>
+                  <div class="tile__details">
+                    <div class="tile__title">
+                      Top Gear
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="tile">
+                  <div class="tile__media">
+                    <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-18.jpg" alt=""  />
+                  </div>
+                  <div class="tile__details">
+                    <div class="tile__title">
+                      Top Gear
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="tile">
+                  <div class="tile__media">
+                    <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-19.jpg" alt=""  />
+                  </div>
+                  <div class="tile__details">
+                    <div class="tile__title">
+                      Top Gear
+                    </div>
+                  </div>
+                </div>
+          
+              </div>
+            </div>
+          
+          </div>
+        </div> -->
+  <div style="padding:0;" class="container-fluid">
+    <img src="img/footer.png">
+  </div>
+  
+
+
+<script>
+  // String formatter
+  if (!String.prototype.format) {
+    String.prototype.format = function () {
+      var args = arguments;
+      return this.replace(/{(\d+)}/g, function (match, number) {
+        return typeof args[number] != 'undefined' ? args[number] : match;
+      });
+    };
+  }
+
+  let app = (() => {
+
+    const $svgLine = document.querySelector('svg .line');
+    const $svgLineShadow = document.querySelector('svg .line-shadow');
+    const sliderThumbSize = 10;
+    const sliderHeight = 200;
+    const svgViewBoxHeight = 100;
+    const svgViewBoxThumbLimit = (sliderThumbSize / 2) * (svgViewBoxHeight / sliderHeight);
+    const svgViewBoxGraphMax = svgViewBoxHeight - svgViewBoxThumbLimit;
+    const svgViewBoxGraphMin = svgViewBoxThumbLimit;
+
+    let ranges = {
+      range1: null,
+      range2: null,
+      range3: null,
+      range4: null,
+      range5: null,
+      range6: null,
+      range7: null
+    };
+    // Only the y values changes
+    let points = {
+      begin: {
+        x: 5,
+        y: 0
+      },
+      point1: {
+        x: 10,
+        y: 0
+      },
+      control1: {
+        x: 20,
+        y: 10
+      },
+      control2: {
+        x: 20,
+        y: 0
+      },
+      point2: {
+        x: 30,
+        y: 0
+      },
+      control3: {
+        x: 40,
+        y: 0
+      },
+      point3: {
+        x: 50,
+        y: 0
+      },
+      control4: {
+        x: 60,
+        y: 0
+      },
+      point4: {
+        x: 70,
+        y: 0
+      },
+      control5: {
+        x: 80,
+        y: 0
+      },
+      point5: {
+        x: 90,
+        y: 0
+      },
+      control6: {
+        x: 100,
+        y: 0
+      },
+      point6: {
+        x: 110,
+        y: 0
+      },
+      control7: {
+        x: 120,
+        y: 0
+      },
+      point7: {
+        x: 130,
+        y: 0
+      },
+    };
+
+    function mapDataRange(value) {
+      // stackoverflow.com/a/929107/5707008
+      // return (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
+      return (((value - 0) * (svgViewBoxGraphMax - svgViewBoxGraphMin)) / (svgViewBoxHeight - 0)) + svgViewBoxGraphMin;
+    }
+
+    function updateSlider($element) {
+      if ($element) {
+
+        let rangeIndex = $element.getAttribute('data-slider-index'),
+          range = ranges[rangeIndex],
+          value = $element.value;
+
+        if (range === value) {
+          return; // No value change, no need to update then
+        }
+        // Update state
+        ranges[rangeIndex] = value;
+
+        let parent = $element.parentElement,
+          $thumb = parent.querySelector('.range-slider__thumb'),
+          $bar = parent.querySelector('.range-slider__bar'),
+          pct = value * ((sliderHeight - sliderThumbSize) / sliderHeight)
+
+        $thumb.style.bottom = `${pct}%`;
+        $bar.style.height = `calc(${pct}% + ${sliderThumbSize / 2}px)`;
+        //$thumb.textContent = `${value}%`;
+
+        renderSliderGraph();
+      }
+    }
+
+    function updatePoints() {
+      // Convert from percentage to coordinate values    
+      // Calculate and floor the values
+      points.point1.y = svgViewBoxHeight - (svgViewBoxHeight * (ranges.range1) / 100) | 0;
+      points.point2.y = svgViewBoxHeight - (svgViewBoxHeight * (ranges.range2) / 100) | 0;
+      points.point3.y = svgViewBoxHeight - (svgViewBoxHeight * (ranges.range3) / 100) | 0;
+      points.point4.y = svgViewBoxHeight - (svgViewBoxHeight * (ranges.range4) / 100) | 0;
+      points.point5.y = svgViewBoxHeight - (svgViewBoxHeight * (ranges.range5) / 100) | 0;
+      points.point6.y = svgViewBoxHeight - (svgViewBoxHeight * (ranges.range6) / 100) | 0;
+      points.point7.y = svgViewBoxHeight - (svgViewBoxHeight * (ranges.range7) / 100) | 0;
+
+      const max = svgViewBoxGraphMax;
+      const min = svgViewBoxGraphMin;
+
+      points.point1.y = mapDataRange(points.point1.y);
+      points.point2.y = mapDataRange(points.point2.y);
+      points.point3.y = mapDataRange(points.point3.y);
+      points.point4.y = mapDataRange(points.point4.y);
+      points.point5.y = mapDataRange(points.point5.y);
+      points.point6.y = mapDataRange(points.point6.y);
+      points.point7.y = mapDataRange(points.point7.y);
+
+      // Update Y for the other points
+      points.begin.y = points.point1.y;
+      points.control1.y = points.point1.y;
+      points.control2.y = points.point2.y;
+      points.control3.y = points.point3.y;
+      points.control4.y = points.point4.y;
+      points.control5.y = points.point5.y;
+      points.control6.y = points.point6.y;
+      points.control7.y = points.point7.y;
+    }
+
+    function getInterpolatedLine(type) {
+
+      let shadowOffset = 0;
+      if (type === 'shadow') {
+        shadowOffset = 0; // simple simulation, no fancy shadow algorithm
+      }
+
+      return 'M {0},{1},{2},{3} C {4},{5} {6},{7} {8},{9} S {10} {11}, {12} {13} S {14} {15}, {16} {17} S {18} {19}, {20} {21} S {22} {23}, {24},{25},{26},{27},{28},{29}'.format(
+        // M
+        points.begin.x, points.begin.y,
+        // L
+        points.point1.x, points.point1.y,
+        // C
+        points.control1.x, points.control1.y,
+        points.control2.x, points.control2.y + shadowOffset,
+        points.point2.x, points.point2.y + shadowOffset,
+        // S
+        points.control3.x, points.control3.y,
+        points.point3.x, points.point3.y,
+        // S
+        points.control4.x, points.control4.y + shadowOffset,
+        points.point4.x, points.point4.y + shadowOffset,
+        // S
+        points.control5.x, points.control5.y,
+        points.point5.x, points.point5.y,
+        // S
+        points.control6.x, points.control6.y + shadowOffset,
+        points.point6.x, points.point6.y + shadowOffset,
+        // S
+        points.control7.x, points.control7.y,
+        points.point7.x, points.point7.y,
+      )
+    }
+
+    function reset() {
+      const inputs = app.inputs;
+      inputs.forEach(input => input.value = 50);
+      inputs.forEach(input => app.updateSlider(input));
+    }
+
+    function renderSliderGraph() {
+      updatePoints();
+      $svgLine.setAttribute('d', getInterpolatedLine());
+      $svgLineShadow.setAttribute('d', getInterpolatedLine('shadow'));
+    }
+
+    function selectPreset(type) {
+      // Generate random graph
+      const inputs = app.inputs;
+      inputs.forEach(input => input.value = Math.random() * 100 | 0);
+      inputs.forEach(input => app.updateSlider(input));
+    }
+
+    return {
+      inputs: [].slice.call(document.querySelectorAll('.sliders input')),
+      updateSlider,
+      reset,
+      selectPreset,
+    };
+
+  })();
+
+  (function initAndSetupTheSliders() {
+    const inputs = app.inputs;
+    let index = 1;
+    inputs.forEach(input => input.setAttribute('data-slider-index', 'range' + index++));
+    inputs.forEach(input => input.value = 50);
+    inputs.forEach(input => app.updateSlider(input));
+    // Cross-browser support where value changes instantly as you drag the handle, therefore two event types.
+    inputs.forEach(input => input.addEventListener('input', element => app.updateSlider(input)));
+    inputs.forEach(input => input.addEventListener('change', element => app.updateSlider(input)));
+    app.selectPreset('custom');
+  })();
+  
+
+  
+  
+  
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+<script>
+
+    $(".hide-button").on('click', function () {
+      $(".row-1").toggle("slow");
+    });
+    </script>
+
+
+  
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  		<!-- jQuery CDN - Slim version (=without AJAX) -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <!-- Popper.JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+      <!-- Bootstrap JS -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+  $(".breadcrumb-mobile").hide();
+}
+</script>
+</body>
+
+</html>
