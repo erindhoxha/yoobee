@@ -25,6 +25,9 @@ body {
 #imagelogo.invert {
   filter: invert(100%);
 }
+.invert-footer {
+  filter: invert(100%);
+}
 .card-img-top {
   border-radius:25px;
 }
@@ -111,7 +114,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 .jumbotron {
   background:url("../img/test.png");
   background-color:white;
-  background-size:contain;
+  background-size:contain no-repeat;
   background-position:center;
   border-radius:0;
   height:90vh;
@@ -160,7 +163,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 }
 
 .subway-jumbotron {
-  background:url("../img/subway-banner.png");
+  background:url("../subway/subway-banner.png");
   background-position:center;
   background-size:cover;
   margin-bottom:30px;
