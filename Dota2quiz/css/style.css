@@ -1,19 +1,15 @@
 html {
     font-family:helvetica !important;
 }
-body {
-    font-family:helvetica;
-}
-.jumbotron-bg {
-    background:url("../img/dota2quizbanner2.png");
-    background-size:cover;
-    height:20vh;
-}
 
 
-@media only screen and (max-width: 600px) {
-    .jumbotron-bg {
-        height:40vh;
-        background-position:center;
-    }
+
+
+
+
+.header {
+    height:100%;
+}
+.header img {
+    width:100%;
 }
