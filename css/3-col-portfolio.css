@@ -133,7 +133,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
   height:330px;
 }
 .yoobee-jumbotron {
-  background:url("../img/yobee-banner.png");
+  background:url("../yoobee/yobee-banner.png");
   background-position:center;
   background-size:cover;
   margin-bottom:30px;
@@ -168,7 +168,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 }
 
 .freecodecamp-jumbotron {
-  background:url("../img/freecodecampbanner.png");
+  background:url("../FreeCodeCamp/img/freecodecampbanner.png");
   background-position:center;
   background-size:cover;
   margin-bottom:30px;
