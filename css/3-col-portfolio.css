@@ -6,8 +6,18 @@
 
 body {
   box-sizing:border-box;
-  font-family:Helvetica;
+  font-family:Montserrat;
 }
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  
+  border-top: 20px solid #5000ff;
+}
+
 #testimonials-header {
   padding-top:50px;
   padding-bottom:5px;
