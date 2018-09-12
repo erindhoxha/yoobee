@@ -47,3 +47,8 @@ $(".all-button").on('click',function() {
     $(".web").css("display","none");
   });
 
+  $(".arrow-down").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#portfolio-work").offset().top},
+        'slow');
+});

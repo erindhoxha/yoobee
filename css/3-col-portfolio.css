@@ -123,9 +123,9 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 }
 
 .jumbotron {
- /* background:url("../img/test.png");*/
+ background:url("../img/test.png");
   background-color:white;
-  background-size:contain no-repeat;
+  background-size:contain;
   background-position:center;
   border-radius:0;
   height:90vh;
